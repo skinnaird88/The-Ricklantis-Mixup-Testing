@@ -4,18 +4,18 @@ import characters.Person;
 
 public class Rick extends Person {
 
-    public String job;
+    public Job job;
 
-    public Rick(String name, int healthValue, String job) {
+    public Rick(String name, int healthValue, Job job) {
         super(name, healthValue);
         this.job = job;
     }
 
-    public String getJob() {
+    public Job getJob() {
         return job;
     }
 
-    public void setJob(String job) {
+    public void setJob(Job job) {
         this.job = job;
     }
 }
