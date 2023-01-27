@@ -1,6 +1,7 @@
 package mortys;
 
 import characters.mortys.Morty;
+import characters.mortys.Role;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -8,14 +9,16 @@ import static org.junit.Assert.assertEquals;
 
 public class MortyTest {
 
-    Morty morty;
+    Morty copMorty;
 
     @Before
     public void before(){
-        morty = new Morty("The one true Morty", 100, "The Mortytown Locos");
+        copMorty = new Morty("Cop Morty", 100, Role.COP);
     }
     @Test
-    public void hasGroup(){
-        assertEquals("The Mortytown Locos", morty.getGroup());
+    public void testMortyProperties(){
+        assertEquals(Role.COP, copMorty.getRole());
+        assertEquals("Cop Morty", copMorty.getName());
+        assertEquals(100, copMorty.getHealthValue());
     }
 }

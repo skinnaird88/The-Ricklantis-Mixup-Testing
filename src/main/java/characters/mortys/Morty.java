@@ -3,18 +3,18 @@ package characters.mortys;
 import characters.Person;
 
 public class Morty extends Person {
- public String group;
+ public Role role;
 
-    public Morty(String name, int healthValue, String group) {
+    public Morty(String name, int healthValue, Role role) {
         super(name, healthValue);
-        this.group = group;
+        this.role = role;
     }
 
-    public String getGroup() {
-        return group;
+    public Role getRole() {
+        return role;
     }
 
-    public void setGroup(String group) {
-        this.group = group;
+    public void setRole(Role role) {
+        this.role = role;
     }
 }
