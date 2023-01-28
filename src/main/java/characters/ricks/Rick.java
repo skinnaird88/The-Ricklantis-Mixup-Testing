@@ -3,25 +3,18 @@ package characters.ricks;
 import characters.Person;
 import props.IProp;
 
+import java.util.ArrayList;
+
 public class Rick extends Person {
 
     public Job job;
-    public IProp prop;
+    ArrayList<IProp> props;
+    IProp prop;
 
-    public Rick(String name, int healthValue, Job job, IProp prop) {
+    public Rick(String name, int healthValue, Job job, ArrayList<IProp> props) {
         super(name, healthValue);
         this.job = job;
-        this.prop = prop;
-    }
-
-    public Rick(String name, int healthValue, IProp prop) {
-        super(name, healthValue);
-        this.prop = prop;
-    }
-
-    public Rick(String name, int healthValue, Job job) {
-        super(name, healthValue);
-        this.job = job;
+        this.props = props;
     }
 
     public Job getJob() {
@@ -30,5 +23,17 @@ public class Rick extends Person {
 
     public void setJob(Job job) {
         this.job = job;
+    }
+
+    public ArrayList<IProp> getProps() {
+        return props;
+    }
+
+    public void setProps(ArrayList<IProp> props) {
+        this.props = props;
+    }
+
+    public void addProp(IProp prop){
+        props.add(prop);
     }
 }

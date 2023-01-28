@@ -1,6 +1,6 @@
 package props;
 
-public class PortalGun {
+public class PortalGun implements IProp{
 
     int portalGunFluidLevel;
 
