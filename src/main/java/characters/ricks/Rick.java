@@ -9,7 +9,6 @@ public class Rick extends Person {
 
     public Job job;
     ArrayList<IProp> props;
-    IProp prop;
 
     public Rick(String name, int healthValue, Job job, ArrayList<IProp> props) {
         super(name, healthValue);
