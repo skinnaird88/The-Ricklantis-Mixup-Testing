@@ -26,8 +26,12 @@ public abstract class Plot {
     public ArrayList<Person> getCharacters() {
         return characters;
     }
+    public void addCharacter(Person character){
+        characters.add(character);
+    }
 
     public void setCharacters(ArrayList<Person> characters) {
         this.characters = characters;
     }
+
 }
