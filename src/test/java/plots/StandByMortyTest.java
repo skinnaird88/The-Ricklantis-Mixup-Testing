@@ -18,6 +18,7 @@ public class StandByMortyTest{
     Morty lizardMorty;
     Morty glassesMorty;
     Morty leftHandedMorty;
+    Morty bigMorty;
 
 
     @Before
@@ -27,6 +28,7 @@ public class StandByMortyTest{
         lizardMorty = new Morty("Lizard Morty", 50, Role.STUDENT);
         glassesMorty = new Morty("Glasses Morty", 50, Role.STUDENT);
         leftHandedMorty = new Morty("Left Handed Morty", 45, Role.STUDENT);
+        bigMorty = new Morty("Big Morty", 30, Role.MOBSTER);
         characters = new ArrayList<Person>();
         characters.add(slick);
         characters.add(lizardMorty);
@@ -41,7 +43,13 @@ public class StandByMortyTest{
 
     @Test
     public void canKillSlickInWishingPortal(){
-        standByMorty.slickJumpsIntoWishingPortal(slick);
+        standByMorty.slickJumpsIntoWishingPortal(slick, characters);
         assertEquals(3, characters.size());
+    }
+
+    @Test
+    public void removesNoneIfNotInList(){
+        standByMorty.slickJumpsIntoWishingPortal(bigMorty, characters);
+        assertEquals(4, characters.size());
     }
 }

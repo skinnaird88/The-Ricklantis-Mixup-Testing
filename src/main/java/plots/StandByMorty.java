@@ -11,9 +11,7 @@ public class StandByMorty extends Plot{
         super(name, characters);
     }
 
-    public void slickJumpsIntoWishingPortal(Person character){
-        if(Objects.equals(character.name, "Slick")){
-            characters.remove(character);
-        }
+    public void slickJumpsIntoWishingPortal(Person character, ArrayList<Person> characters){
+        characters.remove(character);
     }
 }
