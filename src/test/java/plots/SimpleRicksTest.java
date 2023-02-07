@@ -85,6 +85,7 @@ public class SimpleRicksTest {
         assertEquals(6, charactersInFactory.size());
         assertEquals(1, blenderDimension.size());
         assertEquals(0, simpleRick.getHealthValue());
+        assertEquals(350, portalGun.getPortalGunFluidLevel());
     }
 
 

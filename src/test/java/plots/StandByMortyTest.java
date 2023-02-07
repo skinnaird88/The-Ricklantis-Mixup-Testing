@@ -28,7 +28,6 @@ public class StandByMortyTest{
         lizardMorty = new Morty("Lizard Morty", 50, Role.STUDENT);
         glassesMorty = new Morty("Glasses Morty", 50, Role.STUDENT);
         leftHandedMorty = new Morty("Left Handed Morty", 45, Role.STUDENT);
-        bigMorty = new Morty("Big Morty", 30, Role.MOBSTER);
         characters = new ArrayList<Person>();
         characters.add(slick);
         characters.add(lizardMorty);

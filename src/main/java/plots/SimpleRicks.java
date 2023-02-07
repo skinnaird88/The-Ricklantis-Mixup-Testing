@@ -15,7 +15,8 @@ public class SimpleRicks extends Plot{
     public void flavorCoreStandOff(ArrayList<Person> factoryCharacters, ArrayList<Person> blenderCharacters,
                                    Person simpleRick,
                                    ArrayList<IProp> props,
-                                   IProp portalGun){
+                                   PortalGun portalGun){
+        portalGun.teleport(50);
         if(props.contains(portalGun)){
         factoryCharacters.remove(simpleRick);
         blenderCharacters.add(simpleRick);
