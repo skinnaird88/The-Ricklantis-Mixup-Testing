@@ -22,4 +22,5 @@ public class SimpleRicks extends Plot{
         blenderCharacters.add(simpleRick);
         simpleRick.setHealthValue(0);}
     }
+
 }

@@ -12,6 +12,7 @@ public enum Job {
     CANDIDATE,
     SOLDIER,
     INVESTIGATOR,
+    CIA,
     FARMER,
     COUNCIL_OF_RICKS_MEMBER
 }
